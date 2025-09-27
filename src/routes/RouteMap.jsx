@@ -1,30 +1,15 @@
-import { Route, Routes, Outlet } from "react-router-dom";
-import ScrollToTop from "../components/layout/ScrollToTop";
-import ProtectedRoute from "./ProtectedRoute";
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
+import { Routes, Route } from "react-router-dom";
+import Home from "../pages/home/Home"; // Đúng đường dẫn tới Home.jsx của bạn
 
-import Home from "../pages/home/Home";
-
-const Layout = () => (
-  <div className="flex flex-col min-h-screen">
-    <ScrollToTop />
-    <Header />
-    <main className="flex-grow">
-      <Outlet />
-    </main>
-    <Footer />
-  </div>
+const Fallback = () => (
+  <div style={{ padding: 24, fontSize: 16 }}>App is up ✅ (fallback route)</div>
 );
 
-function RouteMap() {
+export default function RouteMap() {
   return (
     <Routes>
-      <Route element={<Layout />}>
-        <Route path="/" element={<Home />} />
-      </Route>
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<Fallback />} />
     </Routes>
   );
 }
-
-export default RouteMap;
