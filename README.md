@@ -1,9 +1,9 @@
 **1) Quy trình cập nhật**
-# 1) Chạy local (tuỳ chọn)
+ 1) Chạy local (tuỳ chọn)
 npm install
 npm run dev
 
-# 2) Commit & push
+ 2) Commit & push
 git add -A
 git commit -m "feat: <mô tả thay đổi>"
 git push
