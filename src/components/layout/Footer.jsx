@@ -19,21 +19,21 @@ const Footer = () => {
               </div>
               
               <p className="text-white mb-4">
-                Quán cơm 405 – Mang đến những bữa trưa đậm đà hương vị với hơn 20 món ăn đa dạng, phong phú và mức giá hợp lý.
+                Quán cơm – Mang đến những bữa trưa đậm đà hương vị với hơn 20 món ăn đa dạng, phong phú và mức giá hợp lý.
 Nằm ngay trung tâm Quận 10, thuận tiện cho bạn thưởng thức mỗi ngày.
               </p>
               <Space direction="vertical" size="small" className="text-white">
                 <div className="flex items-start">
                   <EnvironmentOutlined className="text-white text-lg mr-2 mt-1" />
-                  <span>405 Hòa Hảo, P5, Quận 10, TPHCM (trước sáp nhập)</span>
+                  <span> Quận 10, TPHCM </span>
                 </div>
                 <div className="flex items-center">
                   <PhoneOutlined className="text-white text-lg mr-2" />
-                  <span>Hotline: 0938957232 (Zalo)</span>
+                  <span>Hotline: 0123456789 (Zalo)</span>
                 </div>
                 <div className="flex items-center">
                   <MailOutlined className="text-white text-lg mr-2" />
-                  <span>ngocnguyen120305@gmail.com</span>
+                  <span>jennie@gmail.com</span>
                 </div>
               </Space>
       </div>
@@ -41,7 +41,7 @@ Nằm ngay trung tâm Quận 10, thuận tiện cho bạn thưởng thức mỗi
       <div className="bg-gray-900 text-gray-400 py-4 px-8">
         <div className="mx-auto text-center">
           <p>
-            © {new Date().getFullYear()} Nguyễn Thị Yến Ngọc. All rights reserved.
+            © {new Date().getFullYear()} Nini. All rights reserved.
           </p>
         </div>
       </div>
